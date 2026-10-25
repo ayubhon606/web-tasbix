@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#061522">
+  <title>Astaghfirullah — Tasbeh</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <canvas id="rain"></canvas>
+
+  <div class="sky">
+    <div class="cloud cloud-one"></div>
+    <div class="cloud cloud-two"></div>
+    <div class="moon"></div>
+    <div class="moon-glow"></div>
+    <div class="stars"></div>
+  </div>
+
+  <main class="scene">
+    <section class="prayer">
+      <div class="arabic" lang="ar" dir="rtl">أَسْتَغْفِرُ اللَّهَ</div>
+
+      <div class="ornament">
+        <span></span><i>◆</i><span></span>
+      </div>
+
+      <h1>Astaghfirullah</h1>
+      <p>I seek forgiveness from Allah</p>
+    </section>
+
+    <section class="tasbeeh">
+      <div class="bead-line"></div>
+      <div class="center-glow"></div>
+      <div id="beads"></div>
+
+      <div class="gold-bead" id="goldBead">
+        <div class="gold-shine"></div>
+        <div class="gold-line"></div>
+        <div class="tassel">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+
+      <div class="plus-popup" id="popup">+1</div>
+    </section>
+
+    <section class="counter-area">
+      <div class="counter-ring">
+        <div class="counter-inner">
+          <div id="count">0</div>
+          <div class="counter-bottom">
+            <span>/</span>
+            <span>100</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="horizon"></div>
+    <div class="water">
+      <div class="water-line"></div>
+      <div class="water-ripple ripple-one"></div>
+      <div class="water-ripple ripple-two"></div>
+      <div class="water-ripple ripple-three"></div>
+    </div>
+
+    <div class="controls">
+      <button id="soundButton" aria-label="Nasheedni yoqish">♫</button>
+      <div class="sound-info">
+        <strong>NASHEED</strong>
+        <span id="soundStatus">BOSIB MUSIQANI YOQING</span>
+      </div>
+      <button id="resetButton" aria-label="Hisobni qayta boshlash">↻</button>
+    </div>
+
+    <audio id="nasheed" src="./Where you are halal beats SLOWED+REVERBED+DRUMS — копия.mp3" loop preload="auto"></audio>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
